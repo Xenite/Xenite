@@ -1,0 +1,21 @@
+@define-color documents_collection_bg #000000;
+
+/* gnome-documents */
+
+.documents-collection-icon {
+    background-color: @documents_collection_bg;
+    border-radius: 8px;
+}
+
+/* Epiphany */
+
+EphyToolbar .location-entry .button {
+    border-image-source: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png"));
+}
+
+EphyToolbar .location-entry .button:backdrop,
+EphyToolbar .location-entry .button:backdrop:first-child,
+EphyToolbar .location-entry .button:backdrop:hover,
+EphyToolbar .location-entry .button:backdrop:hover:first-child {
+    border-image-source: -gtk-scaled (url("borders/generic-border-backdrop-dark.png"),url("borders/generic-border-backdrop-dark@2.png"));
+}

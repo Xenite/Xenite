@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=mac
+Comment=mac for gnome
+Encoding=UTF-8
+
+Name[en_US]=mac
+
+[X-GNOME-Metatheme]
+GtkTheme=mac
+MetacityTheme=mac
+IconTheme=simple
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize:maximize
