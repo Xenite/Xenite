@@ -2148,10 +2148,9 @@ background-image: linear-gradient(to bottom,
 
 .notebook tab,
 .notebook tab:backdrop {
-    border-color: shade (@borders, 1.2);
-    border-width: 0px;
-background-image: none;
+    background-image: none;
     background-color: transparent;
+    border-right: 1px solid shade(@borders, 1.2);
 
  
 }
