@@ -202,34 +202,6 @@ font: bold;
 
 }
 
-
-
-
-
-.titlebar .left .titlebutton:nth-child(2):backdrop {
-	background-image: url('window-controls/unfocused-dark.svg');
-padding: 3px 0px 3px 0px;
--gtk-image-effect: dim;
-box-shadow:none;
-}
-
-.titlebar .left .titlebutton:first-child:backdrop {
-	background-image: url('window-controls/unfocused-dark.svg');
-    padding: 0px 0px 0px 0px;
--gtk-image-effect: dim;
-box-shadow:none;
-}
-
-
-.titlebar .left .titlebutton:nth-child(3):backdrop {
-	background-image: url('window-controls/unfocused-dark.svg');
-    padding: 0px 0px 0px 0px;
-box-shadow:none;
--gtk-image-effect: dim;
-}
-
-
-
 .window-frame .maximized,
 .window-frame {
   border-radius: 5px 5px 0px 0px;
