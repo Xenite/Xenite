@@ -1,0 +1,14 @@
+.titlebar .left .titlebutton:nth-child(2):backdrop {
+	background-image: url('window-controls/unfocused_dark.svg');
+	-gtk-image-effect: dim;
+}
+
+.titlebar .left .titlebutton:first-child:backdrop {
+	background-image: url('window-controls/unfocused_dark.svg');
+	-gtk-image-effect: dim;
+}
+
+.titlebar .left .titlebutton:nth-child(3):backdrop {
+	background-image: url('window-controls/unfocused_dark.svg');
+	-gtk-image-effect: dim;
+}
