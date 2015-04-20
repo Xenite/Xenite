@@ -5245,40 +5245,6 @@ background-color: alpha (@theme_bg_color, 0.97);
  * when client-side decorations are in use and the application
  * did not set a custom titlebar.
  */
-.titlebar.default-decoration {
-    border: none;
-    box-shadow: none;
-}
-
-.titlebar .title {
-color: shade (@wm_title, 0.65);
-
-}
-
-.titlebar:backdrop {
-    text-shadow: none;
-    background-image: none;
-    
-background-color: #f6f6f6;
-}
-
-
-.titlebar .titlebutton,
-.titlebar .titlebutton:backdrop,
-.titlebar .titlebutton:backdrop:hover,
-.titlebar .titlebutton:active,
-.titlebar .titlebutton:hover {
-   
-    color: transparent;
-    background: transparent;
-border: none;
-padding: 5px 0px 5px 0px;
-
-}
-
-
-
-
 
 
 /* 
