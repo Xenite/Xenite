@@ -2482,10 +2482,10 @@ GtkFileChooserButton GtkImage:last-child {
 .scrollbar {
     background-image: none;
     border-style: solid;
-    -GtkRange-trough-border: 2;
+    -GtkRange-trough-border: 3;
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false;
-    -GtkRange-slider-width: 3;
+    -GtkRange-slider-width: 6;
     -GtkScrollbar-min-slider-length: 30;
 
     -GtkRange-stepper-spacing: 0;
