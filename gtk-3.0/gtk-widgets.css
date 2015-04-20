@@ -2849,7 +2849,8 @@ GtkTreeMenu .menuitem,
 
 
 .menu,
-.popup {
+.popup,
+.popover {
      padding: 3px;
      border-radius: 4px;
      background-color: transparent;
