@@ -217,9 +217,9 @@
 @import url("gtk-widgets-borders-dark.css");
 @import url("gtk-widgets-assets-dark.css");
 @import url("gtk-widgets.css");
-@import url("gtk-widgets-cark.css");
 @import url("gtk-widgets-dark-overrides.css");
 @import url("gnome-applications.css");
 @import url("granite-widgets.css");
 @import url("gnome-applications-dark-overrides.css");
 @import url("window-control.css");
+@import url("window-control-dark.css");
