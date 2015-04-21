@@ -13,11 +13,11 @@ If you want to get the latest version easily with Git just follow this instructi
 
 2. Run this command: `git clone https://github.com/crutchcorn/eXGTK.git`
 
-3. Well done! The source will be in `/usr/share/themes/eXGTK/
+3. Well done! The source will be in `/usr/share/themes/eXGTK/`
 
 ### Updating
 
-1. Navigate to `/usr/share/themes/eXGTK/
+1. Navigate to `/usr/share/themes/eXGTK/`
 
 2. Run `git pull origin master`
 
