@@ -39,7 +39,7 @@
     /* I want everything nice and flat in the unfocused window */
     text-shadow: none;
     icon-shadow: none;
-    background-color: alpha (@theme_base_color, 0.98);
+    background-color: alpha (@theme_base_color, 0.9);
     color: @theme_unfocused_fg_color;
 }
 
