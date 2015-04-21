@@ -2918,6 +2918,7 @@ GtkStack .view:backdrop,
 .destructive-action.button {
     background-image: @destructive_action_button_b;
     color: @destructive_action_button_fg;
+    icon-shadow: 0 1px @destructive_action_button_shadow;
 }
 
 .destructive-action.button:hover {
@@ -2929,18 +2930,7 @@ GtkStack .view:backdrop,
     background-image: linear-gradient(to bottom,
                                       @destructive_action_button_b,
                                       @destructive_action_button_a);
-    color: @destructive_action_button_fg;
-}
-
-.destructive-action.button {
-    /* Disable shadow
-    text-shadow: 0 1px @destructive_action_button_shadow;
-    */
-    icon-shadow: 0 1px @destructive_action_button_shadow;
-}
-
-.destructive-action.button:active,
-.destructive-action.button:hover:active {
+    color: @destructive_action_button_fg_pressed;
     text-shadow: 0 1px shade(@destructive_action_button_shadow, 1.15);
     icon-shadow: 0 1px shade(@destructive_action_button_shadow, 1.15);
 }
