@@ -1,14 +1,14 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=mac
-Comment=mac for gnome
+Name=eXGTK
+Comment=A fork of XGTK theme with a lot of fixes for Freya (eOS 0.3)
 Encoding=UTF-8
 
-Name[en_US]=mac
+Name[en_US]=eXGTK
 
 [X-GNOME-Metatheme]
-GtkTheme=mac
-MetacityTheme=mac
+GtkTheme=eXGTK
+MetacityTheme=eXGTK
 IconTheme=simple
 CursorTheme=DMZ-Black
-ButtonLayout=close,minimize:maximize
+ButtonLayout=close,minimize,maximize:
