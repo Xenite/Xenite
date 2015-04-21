@@ -212,14 +212,14 @@
 @define-color wm_button_bg_active_b shade (@theme_bg_color, 0.7);
 @define-color wm_button_bg_active_c shade (@theme_bg_color, 0.7);
 
-@import url("gtk-main-common.css");
-@import url("gtk-widgets-backgrounds.css");
-@import url("gtk-widgets-borders-dark.css");
-@import url("gtk-widgets-assets-dark.css");
-@import url("gtk-widgets.css");
-@import url("gtk-widgets-dark-overrides.css");
-@import url("gnome-applications.css");
-@import url("granite-widgets.css");
-@import url("gnome-applications-dark-overrides.css");
-@import url("window-control.css");
-@import url("window-control-dark.css");
+@import url("css/gtk-main-common.css");
+@import url("css/gtk-widgets-backgrounds.css");
+@import url("css/dark/gtk-widgets-borders.css");
+@import url("css/dark/gtk-widgets-assets.css");
+@import url("css/gtk-widgets.css");
+@import url("css/dark/gtk-widgets-overrides.css");
+@import url("css/gnome-applications.css");
+@import url("css/granite-widgets.css");
+@import url("css/dark/gnome-applications-overrides.css");
+@import url("css/window-control.css");
+@import url("css/dark/window-control.css");
