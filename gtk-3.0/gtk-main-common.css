@@ -6,7 +6,7 @@
 @define-color destructive_action_button_a #e03d3d;
 @define-color destructive_action_button_b #ef2929;
 @define-color destructive_action_button_border #9d4242;
-@define-color destructive_action_button_fg #ffffff;
+@define-color destructive_action_button_fg #e03d3d;
 @define-color destructive_action_button_shadow shade(@destructive_action_button_border, 1.15);
 
 /*******

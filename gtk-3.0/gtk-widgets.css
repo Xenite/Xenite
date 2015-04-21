@@ -4047,7 +4047,9 @@ GtkProgressBar.osd.progressbar {
 }
 
 .destructive-action.button {
+    /* Disable shadow
     text-shadow: 0 1px @destructive_action_button_shadow;
+    */
     icon-shadow: 0 1px @destructive_action_button_shadow;
 }
 
