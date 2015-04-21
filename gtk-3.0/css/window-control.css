@@ -45,7 +45,7 @@
 	background-image: url('window-controls/min_prelight.svg');
 }
 
-.titlebar .left .titlebutton:nth-child(2):active{
+.titlebar .left .titlebutton:nth-child(2):active {
 	background-image: url('window-controls/min_pressed.svg');
 }
 
@@ -59,7 +59,7 @@
 	-gtk-image-effect: dim;
 }
 
-.titlebar .left .titlebutton:first-child:hover{
+.titlebar .left .titlebutton:first-child:hover {
 	background-image: url('window-controls/close_prelight.svg');
 }
 
