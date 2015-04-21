@@ -1,37 +1,24 @@
 /* Button background */
-
 .toolbar .button.raised,
 .toolbar .raised .button,
 .toolbar GtkComboBox .button,
 .spinbutton.vertical .button {
-   
     background-color: @button_gradient_color_a;
-
-    
 }
-.header-bar .button:backdrop {
-   
-    background-color: shade (@button_gradient_color_a, 1);
 
-    
+.header-bar .button:backdrop {
+    background-color: shade (@button_gradient_color_a, 1);
 }
 
 .header-bar .button:insensitive {
-   
     background-color: shade (@button_gradient_color_a, 1.2);
- background-image: transparent;
+    background-image: transparent;
     color: alpha (@theme_text_color, 0.6);
 }
 
-
 .button {
-   
     background-color: shade (@button_gradient_color_a, 1.2);
-
-    
 }
-
-
 
 /* Pushed button and progressbar through background */
 .header-bar .button.flat,
@@ -42,24 +29,22 @@
 .header-bar .button.flat:active:hover,
 .header-bar .button:insensitive:backdrop,
 .header-bar .button:backdrop,
- .button.flat:insensitive,
- .button.flat:insensitive:backdrop,
- .button.flat:active:insensitive,
- .button.flat:hover:insensitive,
- .button.flat:backdrop,
- .button.flat:active,
- .button.flat:active:hover,
- .button.flat:hover,
- .button.flat:active:backdrop, 
- .button.flat:hover:backdrop,
- .button.flat,
-
- .button.flat:active, 
- .button.flat:hover {
-      background-image: none;
+.button.flat:insensitive,
+.button.flat:insensitive:backdrop,
+.button.flat:active:insensitive,
+.button.flat:hover:insensitive,
+.button.flat:backdrop,
+.button.flat:active,
+.button.flat:active:hover,
+.button.flat:hover,
+.button.flat:active:backdrop,
+.button.flat:hover:backdrop,
+.button.flat,
+.button.flat:active,
+.button.flat:hover {
+    background-image: none;
     background-color:transparent;
-box-shadow: none;
-    
+    box-shadow: none; 
 }
 
 .button:active, 
@@ -72,15 +57,9 @@ box-shadow: none;
 .toolbar .raised .button:active,
 .toolbar .button.raised:active:hover,
 .toolbar .raised .button:active:hover {
-
     box-shadow: none;
-    /*  background-color: mix(@borders, @theme_bg_color, 0.5); */
-   
-                                 
     background-color: shade(@button_active, 1);
-
 }
-
 
 /* Primary and inline toolbars pushed button background */
 .primary-toolbar .button:active,
@@ -88,7 +67,6 @@ box-shadow: none;
 .inline-toolbar .button:active,
 .inline-toolbar .button:active:hover {
     background-color: shade(@button_active, 0.99);
-
 }
 
 /* Prelit button background */
@@ -99,15 +77,13 @@ box-shadow: none;
 .toolbar GtkComboBox .button:hover,
 .spinbutton.vertical .button:hover {
     background-color: alpha (@button_hover_gradient_color_a, 0.7);
-
-
 }
 
 /* Prelit button on primary toolbar background */
 .primary-toolbar .button:hover {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-				      alpha(@toolbar_button_prelight, 0),
+                                      alpha(@toolbar_button_prelight, 0),
                                       @toolbar_button_prelight 54%,
                                       alpha(@toolbar_button_prelight, 0)
                                       );
@@ -120,14 +96,11 @@ box-shadow: none;
 .toolbar GtkComboBox .button:insensitive,
 .toolbar .button.raised:insensitive,
 .toolbar .raised .button:insensitive {
-
     background-color: alpha (@insensitive_bg_color, 0.8);
- background-image: transparent;
-
+    background-image: transparent;
     background-size: 6px;
     background-repeat: repeat;
     background-position: top left;
-
 }
 
 /* Pushed + Insensitive button background */
@@ -138,9 +111,8 @@ box-shadow: none;
                                       shade(@insensitive_bg_color, 0.95),
                                       @insensitive_bg_color 40%,
                                       @insensitive_bg_color
-				      );
+                                      );
     background-color: transparent;
-
 }
 
 /* Unfocused window button background */
@@ -153,7 +125,6 @@ box-shadow: none;
 .primary-toolbar .raised .button:backdrop:hover {
     background-image: none;
     background-color: transparent;
-
 }
 
 /* Unfocused window pushed button background */
@@ -162,7 +133,6 @@ box-shadow: none;
 .toolbar .button:active:hover:backdrop {
     background-image: none;
     background-color: @unfocused_borders;
-
 }
 
 /* Unfocused window insensitive button background */
@@ -170,13 +140,11 @@ box-shadow: none;
 .toolbar .button:insensitive:backdrop {
     background-image: none;
     background-color: @unfocused_insensitive_bg_color;
-
 }
 
 .button:insensitive:active:backdrop {
     background-image: none;
     background-color: mix(@unfocused_insensitive_bg_color, @unfocused_borders, 0.5);
-
 }
 
 /* Entry background */
@@ -196,7 +164,6 @@ GtkComboBox.combobox-entry .button:hover,
 
 /* Entry pushed button background */
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
-/* .primary-toolbar GtkComboBox.combobox-entry .button:hover:active,*/
 GtkComboBox.combobox-entry .button:active,
 .spinbutton .button:active,
 .spinbutton .button:active:hover,
@@ -306,7 +273,6 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
 }
 
 /* Progressbar backgrounds */
-
 .progressbar,
 .progressbar row,
 .progressbar row:hover,

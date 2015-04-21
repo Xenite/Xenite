@@ -48,13 +48,15 @@
 /* draw regular check and radio items using our SVG assets */
 .check,
 .view.cell.check {
-    background-image: -gtk-scaled(url("assets/checkbox-unchecked.png"),url("assets/checkbox-unchecked@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked.png"),
+                      url("assets/checkbox-unchecked@2.png"));
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .check:insensitive {
-    background-image: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"),url("assets/checkbox-unchecked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"),
+                      url("assets/checkbox-unchecked-insensitive@2.png"));
 }
 
 .check row:insensitive {
@@ -64,61 +66,73 @@
 .check:backdrop,
 .view.cell.check:backdrop,
 .check row:selected:backdrop {
-    background-image: -gtk-scaled(url("assets/checkbox-unchecked-backdrop.png"),url("assets/checkbox-unchecked-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-backdrop.png"),
+                      url("assets/checkbox-unchecked-backdrop@2.png"));
 }
 
 .check:insensitive:backdrop,
 .check row:selected:insensitive:backdrop {
-    background-image: -gtk-scaled(url("assets/checkbox-unchecked-backdrop-insensitive.png"),url("assets/checkbox-unchecked-backdrop-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-backdrop-insensitive.png"),
+                      url("assets/checkbox-unchecked-backdrop-insensitive@2.png"));
 }
 
 .check:active,
 .view.cell.check:active {
-    background-image: -gtk-scaled(url("assets/checkbox-checked.png"),url("assets/checkbox-checked@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-checked.png"),
+                      url("assets/checkbox-checked@2.png"));
 }
 
 .check:active:insensitive {
-    background-image: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"),url("assets/checkbox-checked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"),
+                      url("assets/checkbox-checked-insensitive@2.png"));
 }
 
 .check:active:backdrop,
 .view.cell:active:backdrop,
 .check row:selected:active:backdrop {
-    background-image: -gtk-scaled(url("assets/checkbox-checked-backdrop.png"),url("assets/checkbox-checked-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-checked-backdrop.png"),
+                      url("assets/checkbox-checked-backdrop@2.png"));
 }
 
 .check:active:insensitive:backdrop,
 .check row:selected:active:insensitive:backdrop {
-    background-image: -gtk-scaled(url("assets/checkbox-checked-backdrop-insensitive.png"),url("assets/checkbox-checked-backdrop-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-checked-backdrop-insensitive.png"),
+                      url("assets/checkbox-checked-backdrop-insensitive@2.png"));
 }
 
 .check:inconsistent {
-    background-image: -gtk-scaled(url("assets/checkbox-mixed.png"),url("assets/checkbox-mixed@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-mixed.png"),
+                      url("assets/checkbox-mixed@2.png"));
 }
 
 .check:inconsistent:insensitive {
-    background-image: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"),url("assets/checkbox-mixed-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"),
+                      url("assets/checkbox-mixed-insensitive@2.png"));
 }
 
 .check:inconsistent:backdrop,
 .check row:selected:inconsistent:backdrop {
-    background-image: -gtk-scaled(url("assets/checkbox-mixed-backdrop.png"),url("assets/checkbox-mixed-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-backdrop.png"),
+                      url("assets/checkbox-mixed-backdrop@2.png"));
 }
 
 .check:inconsistent:insensitive:backdrop,
 .check row:selected:inconsistent:insensitive:backdrop {
-    background-image: -gtk-scaled(url("assets/checkbox-mixed-backdrop-insensitive.png"),url("assets/checkbox-mixed-backdrop-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-backdrop-insensitive.png"),
+                      url("assets/checkbox-mixed-backdrop-insensitive@2.png"));
 }
 
 .radio,
 .view.cell.radio {
-    background-image: -gtk-scaled(url("assets/radio-unchecked.png"),url("assets/radio-unchecked@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-unchecked.png"),
+                      url("assets/radio-unchecked@2.png"));
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .radio:insensitive {
-    background-image: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"),url("assets/radio-unchecked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"),
+                      url("assets/radio-unchecked-insensitive@2.png"));
 }
 
 .radio row:insensitive {
@@ -128,50 +142,60 @@
 .radio:backdrop,
 .view.cell.radio:backdrop,
 .radio row:selected:backdrop {
-    background-image: -gtk-scaled(url("assets/radio-unchecked-backdrop.png"),url("assets/radio-unchecked-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-unchecked-backdrop.png"),
+                      url("assets/radio-unchecked-backdrop@2.png"));
 }
 
 .radio:insensitive:backdrop,
 .radio row:selected:insensitive:backdrop {
-    background-image: -gtk-scaled(url("assets/radio-unchecked-backdrop-insensitive.png"),url("assets/radio-unchecked-backdrop-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-unchecked-backdrop-insensitive.png"),
+                      url("assets/radio-unchecked-backdrop-insensitive@2.png"));
 }
 
 .radio:active,
 .view.cell.radio:active {
-    background-image: -gtk-scaled(url("assets/radio-checked.png"),url("assets/radio-checked@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-checked.png"),
+                      url("assets/radio-checked@2.png"));
 }
 
 .radio:active:insensitive {
-    background-image: -gtk-scaled(url("assets/radio-checked-insensitive.png"),url("assets/radio-checked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-checked-insensitive.png"),
+                      url("assets/radio-checked-insensitive@2.png"));
 }
 
 .radio:active:backdrop,
 .view.cell.radio:active:backdrop,
 .radio row:selected:active:backdrop {
-    background-image: -gtk-scaled(url("assets/radio-checked-backdrop.png"),url("assets/radio-checked-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-checked-backdrop.png"),
+                      url("assets/radio-checked-backdrop@2.png"));
 }
 
 .radio:active:insensitive:backdrop,
 .radio row:selected:active:insensitive:backdrop {
-    background-image: -gtk-scaled(url("assets/radio-checked-backdrop-insensitive.png"),url("assets/radio-checked-backdrop-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-checked-backdrop-insensitive.png"),
+                      url("assets/radio-checked-backdrop-insensitive@2.png"));
 }
 
 .radio:inconsistent {
-    background-image: -gtk-scaled(url("assets/radio-mixed.png"),url("assets/radio-mixed@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-mixed.png"),
+                      url("assets/radio-mixed@2.png"));
 }
 
 .radio:inconsistent:insensitive {
-    background-image: -gtk-scaled(url("assets/radio-mixed-insensitive.png"),url("assets/radio-mixed-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-mixed-insensitive.png"),
+                      url("assets/radio-mixed-insensitive@2.png"));
 }
 
 .radio:inconsistent:backdrop,
 .radio row:selected:inconsistent:backdrop {
-    background-image: -gtk-scaled(url("assets/radio-mixed-backdrop.png"),url("assets/radio-mixed-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-mixed-backdrop.png"),
+                      url("assets/radio-mixed-backdrop@2.png"));
 }
 
 .radio:inconsistent:insensitive:backdrop,
 .radio row:selected:inconsistent:insensitive:backdrop {
-    background-image: -gtk-scaled(url("assets/radio-mixed-backdrop-insensitive.png"),url("assets/radio-mixed-backdrop-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-mixed-backdrop-insensitive.png"),
+                      url("assets/radio-mixed-backdrop-insensitive@2.png"));
 }
 
 .sidebar .view.radio:active,
@@ -198,11 +222,13 @@
  * Touch text selection handles *
  ********************************/
 .cursor-handle.bottom {
-    background-image: -gtk-scaled(url("assets/scale-slider-up-backdrop.png"),url("assets/scale-slider-up-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/scale-slider-up-backdrop.png"),
+                      url("assets/scale-slider-up-backdrop@2.png"));
 }
 
 .cursor-handle.top {
-    background-image: -gtk-scaled(url("assets/scale-slider-down-backdrop.png"),url("assets/scale-slider-down-backdrop@2.png"));
+    background-image: -gtk-scaled(url("assets/scale-slider-down-backdrop.png"),
+                      url("assets/scale-slider-down-backdrop@2.png"));
 }
 
 /****************
