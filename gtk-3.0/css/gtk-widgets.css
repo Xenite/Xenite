@@ -3,7 +3,7 @@
     padding: 0;
     background-clip: padding-box;
     -GtkToolButton-icon-spacing: 2;
-    /*-GtkTextView-error-underline-color: @error_color;*/
+    -GtkTextView-error-underline-color: @error_color;
     -GtkPaned-handle-size: 1;
     -GtkCheckButton-indicator-size: 16;
     -GtkCheckMenuItem-indicator-size: 12;
