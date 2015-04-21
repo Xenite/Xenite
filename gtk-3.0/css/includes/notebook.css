@@ -182,7 +182,7 @@
 
 .notebook tab.reorderable-page:active {
   background-color: alpha (@theme_bg_color, 0.5);
-  background-image: url("assets/background-noise-toolbar.png"),
+  background-image: url("../assets/background-noise-toolbar.png"),
                     linear-gradient(to bottom,
                                     alpha (#000, 0.0),
                                     alpha (blue, 0.01) 32%,
