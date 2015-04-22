@@ -3675,3 +3675,6 @@ GsmFailWhaleDialog .button:active {
 
 /* INCLUDE: wingpanel.css */
 @import url("includes/wingpanel.css");
+
+/* INCLUDE: photos.css */
+@import url("includes/photos.css");
