@@ -1286,7 +1286,7 @@ GtkComboBox.combobox-entry .button {
     -GtkButton-default-border: 0;
     -GtkButton-inner-border: 3;
     border-style: solid;
-    border-color: #ff0000;
+    border-color: transparent;
     padding: 3px 6px 3px 6px;
     text-shadow: 0 1px @button_text_shadow;
     icon-shadow: 0 1px @button_text_shadow;
