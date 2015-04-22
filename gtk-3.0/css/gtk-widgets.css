@@ -1286,7 +1286,7 @@ GtkComboBox.combobox-entry .button {
     -GtkButton-default-border: 0;
     -GtkButton-inner-border: 3;
     border-style: solid;
-    border-color: transparent;
+    border-color: #ff0000;
     padding: 3px 6px 3px 6px;
     text-shadow: 0 1px @button_text_shadow;
     icon-shadow: 0 1px @button_text_shadow;
@@ -1403,7 +1403,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button,
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar GtkToolButton > .button {
-    box-shadow: inset 1px 0 @inset_light_color, inset -1px 0 @inset_dark_color;
+    box-shadow: inset -1px 0 @inset_dark_color;
 }
 
 .linked .button:first-child,
