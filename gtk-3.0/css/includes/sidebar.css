@@ -171,3 +171,7 @@ SlingshotSlingshotView > GtkPopover.popover.background {
                                     );
   background-color: transparent;
 }
+
+SlingshotSlingshotView SlingshotWidgetsAppEntry GtkLabel {
+  color: #535d6c; /* ISSUE: #29 */
+}
