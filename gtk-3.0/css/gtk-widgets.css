@@ -2127,26 +2127,15 @@ GtkTreeMenu .menuitem,
 .menubar .menuitem {
     border-style: none;
     padding: 3px 8px;
+    -GtkMenuItem-arrow-scaling: 0.4;
+    padding: 4px;
 }
 
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
     background-image: none;
     background-color: @theme_selected_bg_color;
-    color: theme_selected_bg_color;
-    border-radius: 4px 4px 0 0;
-}
-
-.menubar .menuitem:hover {
     color: @menu_fg_color;
-}
-
-.menu .menuitem {
-    -GtkMenuItem-arrow-scaling: 0.4;
-    padding: 4px;
-}
-
-.menu .menuitem:hover {
     border-radius: 0;
 }
 
@@ -3683,3 +3672,6 @@ GsmFailWhaleDialog .button:active {
 
 /* INCLUDE: osd.css */
 @import url("includes/osd.css");
+
+/* INCLUDE: wingpanel.css */
+@import url("includes/wingpanel.css");
