@@ -14,3 +14,14 @@
 MarlinViewChromeTopMenu.header-bar > MarlinViewChromeLocationBar > .marlin-pathbar {
     border: 1px solid alpha (@borders, 0.9);
 }
+
+MarlinViewOverlayBar.overlay-bar {
+  background-image: linear-gradient(to bottom,
+                                    alpha (#f9f9f9, 0.98),
+                                    alpha (#f9f9f9, 0.95) 80%,
+                                    alpha (#f0f0f0, 0.95)
+                                    );
+  color: @theme_text_color;
+  border: 1px solid alpha(@borders, 0.5);
+  padding: 3px;
+}
