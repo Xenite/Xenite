@@ -43,7 +43,7 @@
 .button.flat:active,
 .button.flat:hover {
     background-image: none;
-    background-color:transparent;
+    background-color: transparent;
     box-shadow: none; 
 }
 

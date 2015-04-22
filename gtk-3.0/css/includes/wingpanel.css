@@ -2,3 +2,34 @@ WingpanelWidgetsMenuBar:nth-child(2) .menuitem:hover,
 WingpanelWidgetsMenuBar.menubar .menuitem.panel-app-button:hover {
   background-color: transparent; /* ISSUE: #34 */
 }
+
+/* Slingshot styles */
+
+SlingshotSlingshotView > GtkPopover.popover.background {
+  background-image: linear-gradient(to bottom,
+                                    alpha (#f9f9f9, 0.98),
+                                    alpha (#f9f9f9, 0.95) 80%,
+                                    alpha (#f0f0f0, 0.95)
+                                    );
+  background-color: transparent;
+}
+
+SlingshotSlingshotView SlingshotWidgetsAppEntry GtkLabel {
+  color: #535d6c; /* ISSUE: #29 */
+}
+
+SlingshotWidgetsSearchView {
+  color: #535d6c;
+}
+
+/* ISSUE: #30 */
+SlingshotWidgetsSearchView .button.flat:hover {
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Same as #30 for Category view */
+SlingshotWidgetsCategoryView .button.flat:hover GtkLabel {
+  color: #fff;
+  text-shadow: none;
+}

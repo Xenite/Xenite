@@ -162,18 +162,3 @@ GtkStack .view:backdrop,
   text-shadow: 0 1px alpha (#000, 0.1);
   icon-shadow: 0 1px alpha (#000, 0.1);
 }
-
-/* Slingshot Applications menu style */
-
-SlingshotSlingshotView > GtkPopover.popover.background {
-  background-image: linear-gradient(to bottom,
-                                    alpha (#f9f9f9, 0.98),
-                                    alpha (#f9f9f9, 0.95) 80%,
-                                    alpha (#f0f0f0, 0.95)
-                                    );
-  background-color: transparent;
-}
-
-SlingshotSlingshotView SlingshotWidgetsAppEntry GtkLabel {
-  color: #535d6c; /* ISSUE: #29 */
-}
