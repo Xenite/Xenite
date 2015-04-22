@@ -9,7 +9,7 @@
 @define-color metacity_color @theme_bg_color;
 @define-color metacity_text #888a85;
 @define-color button_under #ddd;
-@define-color button_active shade (#575757, 1.2);
+@define-color button_active shade(#575757, 1.2);
 
 @define-color placeholder_text_color shade(@text_color, 3.5);
 

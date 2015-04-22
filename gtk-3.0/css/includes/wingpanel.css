@@ -15,11 +15,15 @@ SlingshotSlingshotView > GtkPopover.popover.background {
   border: none;
   box-shadow: inset 0 0 1px 1px darker(@theme_bg_color); /* ISSUE: #39 */
 }
-/* ISSUE: #41; lines 19-46 */
+/* ISSUE: #41; lines 19-40 */
 SlingshotSlingshotView GraniteWidgetsModeButtonItem.button,
 SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:backdrop,
-SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:active,
-SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover {
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:checked,
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover,
+SlingshotWidgetsSwitcher GtkToggleButton.button,
+SlingshotWidgetsSwitcher GtkToggleButton.button:backdrop,
+SlingshotWidgetsSwitcher GtkToggleButton.button:checked,
+SlingshotWidgetsSwitcher GtkToggleButton.button:hover {
   border: 1px solid #97a5b4;
   border-image: none;
   color: #97a5b4;
@@ -27,7 +31,9 @@ SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover {
 }
 
 SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:checked,
-SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover {
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover,
+SlingshotWidgetsSwitcher GtkToggleButton.button:checked,
+SlingshotWidgetsSwitcher GtkToggleButton.button:hover {
   border-color: #535d6c;
   color: #535d6c;
   border-radius: 3px;

@@ -113,6 +113,7 @@
                                       @insensitive_bg_color
                                       );
     background-color: transparent;
+    color: @theme_selected_fg_color; /* ISSUE: #38 */
 }
 
 /* Unfocused window button background */
@@ -133,6 +134,7 @@
 .toolbar .button:active:hover:backdrop {
     background-image: none;
     background-color: @unfocused_borders;
+    color: @theme_selected_fg_color; /* ISSUE: #38 */
 }
 
 /* Unfocused window insensitive button background */
