@@ -12,6 +12,8 @@ SlingshotSlingshotView > GtkPopover.popover.background {
                                     alpha (#f0f0f0, 0.95)
                                     );
   background-color: transparent;
+  border: none;
+  box-shadow: inset 0 0 1px 1px darker(@theme_bg_color); /* ISSUE: #39 */
 }
 
 SlingshotSlingshotView GtkSearchEntry.entry,
