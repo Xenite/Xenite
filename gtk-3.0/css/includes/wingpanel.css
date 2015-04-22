@@ -24,9 +24,9 @@ SlingshotWidgetsSwitcher GtkToggleButton.button,
 SlingshotWidgetsSwitcher GtkToggleButton.button:backdrop,
 SlingshotWidgetsSwitcher GtkToggleButton.button:checked,
 SlingshotWidgetsSwitcher GtkToggleButton.button:hover {
-  border: 1px solid #97a5b4;
+  border: 1px solid @theme_bg_color;
   border-image: none;
-  color: #97a5b4;
+  color: darker(@theme_bg_color);
   border-radius: 3px;
 }
 
@@ -34,21 +34,21 @@ SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:checked,
 SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover,
 SlingshotWidgetsSwitcher GtkToggleButton.button:checked,
 SlingshotWidgetsSwitcher GtkToggleButton.button:hover {
-  border-color: #535d6c;
-  color: #535d6c;
+  border-color: darker(@theme_bg_color);
+  color: darker(@theme_bg_color);
   border-radius: 3px;
 }
 
 SlingshotSlingshotView GtkSearchEntry.entry,
 SlingshotSlingshotView GtkSearchEntry.entry:focus {
   box-shadow: none;
-  border: 1px solid #97a5b4;
+  border: 1px solid @theme_bg_color;
   border-radius: 3px;
 }
 
 SlingshotSlingshotView GtkSearchEntry.entry:focus {
-  border-color: #535d6c;
-  color: #535d6c;
+  border-color: darker(@theme_bg_color);
+  color: darker(@theme_bg_color);
 }
 
 SlingshotSlingshotView SlingshotWidgetsAppEntry GtkLabel {
