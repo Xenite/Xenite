@@ -15,6 +15,21 @@ SlingshotSlingshotView > GtkPopover.popover.background {
   border: none;
   box-shadow: inset 0 0 1px 1px darker(@theme_bg_color); /* ISSUE: #39 */
 }
+/* ISSUE: #41; lines 19-32 */
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button,
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:backdrop,
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:active,
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover {
+  border: 1px solid #97a5b4;
+  border-image: none;
+  color: #97a5b4;
+}
+
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:checked,
+SlingshotSlingshotView GraniteWidgetsModeButtonItem.button:hover {
+  border-color: #535d6c;
+  color: #535d6c;
+}
 
 SlingshotSlingshotView GtkSearchEntry.entry,
 SlingshotSlingshotView GtkSearchEntry.entry:focus {
