@@ -51,7 +51,8 @@ GthSidebar:selected,
 .sidebar.view:selected,
 .source-list:selected,
 .source-list.view:selected {
-  background-color: transparent;
+  background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
   text-shadow: 0 1px alpha (#000, 0.4);
   icon-shadow: 0 1px alpha (#000, 0.4);
 }
@@ -61,7 +62,8 @@ GthSidebar:selected,
 .sidebar.view:selected:backdrop,
 .source-list:selected:backdrop,
 .source-list.view:selected:backdrop {
-  background-color: transparent;
+  background-color: shade (@theme_bg_color, 0.87);
+  color: @theme_selected_fg_color;
   text-shadow: 0 1px alpha (#fff, 0.2);
   icon-shadow: 0 1px alpha (#fff, 0.2);
 }
