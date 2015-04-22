@@ -1,0 +1,12 @@
+.dynamic-notebook .notebook tab,
+.dynamic-notebook .notebook tab:hover {
+  border-right: 1px solid @unfocused_borders;
+}
+
+.dynamic-notebook .notebook {
+  border-top: none;
+}
+
+.dynamic-notebook .notebook:backdrop {
+  background: @theme_unfocused_bg_color;
+}
