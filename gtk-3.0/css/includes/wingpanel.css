@@ -14,6 +14,11 @@ SlingshotSlingshotView > GtkPopover.popover.background {
   background-color: transparent;
 }
 
+SlingshotSlingshotView GtkSearchEntry.entry,
+SlingshotSlingshotView GtkSearchEntry.entry:focus {
+  box-shadow: none;
+}
+
 SlingshotSlingshotView SlingshotWidgetsAppEntry GtkLabel {
   color: #535d6c; /* ISSUE: #29 */
 }
