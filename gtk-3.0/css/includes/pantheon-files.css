@@ -10,3 +10,7 @@
 .dynamic-notebook .notebook:backdrop {
   background: @theme_unfocused_bg_color;
 }
+
+MarlinViewChromeTopMenu.header-bar > MarlinViewChromeLocationBar > .marlin-pathbar {
+    border: 1px solid alpha (@borders, 0.9);
+}
