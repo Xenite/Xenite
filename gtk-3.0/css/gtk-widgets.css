@@ -462,7 +462,9 @@ GtkTreeView.separator:backdrop,
 .header-bar .button,
 .header-bar .button:hover {
     border: 0px solid transparent;
+    /* ISSUE: #36
     box-shadow: 0 2px 0 0 alpha (@button_under, 1);
+    */
     border-radius: 4px;
 }
 
