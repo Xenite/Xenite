@@ -3523,7 +3523,7 @@ GtkModelButton.button:selected {
                                       );
     background-color: alpha (@theme_bg_color, 0.97);
     border-radius: 5px 5px 0px 0px;
-    border-width: 0 0 1px;
+    border-width: 0; /* ISSUE: #28 */
     border-style: solid;
     border-color: shade(@borders, 0.95);
     text-shadow: 0 1px alpha (#fff, 0.4);
