@@ -11,7 +11,7 @@ If you want to get the latest version easily with Git just follow this instructi
 
 1. Navigate to `/usr/share/themes` (`cd /usr/share/themes`)
 
-2. Run this command: `git clone https://github.com/crutchcorn/eXGTK.git`
+2. Run this command: `git clone https://github.com/eOS-themes/eXGTK.git`
 
 3. Well done! The source will be in `/usr/share/themes/eXGTK/`
 
