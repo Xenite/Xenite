@@ -1,13 +1,21 @@
-.dynamic-notebook .notebook tab,
-.dynamic-notebook .notebook tab:hover {
-  border-right: 1px solid @unfocused_borders;
-}
-
-.dynamic-notebook .notebook {
+@define-color tab_border #cacaca;
+MarlinViewWindow .dynamic-notebook .notebook tab,
+MarlinViewWindow .dynamic-notebook .notebook tab:hover,
+MarlinViewWindow .dynamic-notebook .notebook tab:active,
+MarlinViewWindow .dynamic-notebook .notebook:backdrop tab,
+MarlinViewWindow .dynamic-notebook .notebook:backdrop tab:hover,
+MarlinViewWindow .dynamic-notebook .notebook:backdrop tab:active {
   border-top: none;
+  box-shadow: none;
+  border-right: 1px solid @tab_border;
+  border-left: 1px solid @tab_border;
 }
 
-.dynamic-notebook .notebook:backdrop {
+MarlinViewWindow .dynamic-notebook .notebook {
+  border-top: 1px solid @tab_border;
+}
+
+MarlinViewWindow .dynamic-notebook .notebook:backdrop {
   background: @theme_unfocused_bg_color;
 }
 

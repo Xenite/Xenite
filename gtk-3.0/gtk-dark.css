@@ -212,11 +212,11 @@
 @define-color wm_button_bg_active_b shade (@theme_bg_color, 0.7);
 @define-color wm_button_bg_active_c shade (@theme_bg_color, 0.7);
 
+@import url("css/gtk-widgets.css");
 @import url("css/gtk-main-common.css");
 @import url("css/gtk-widgets-backgrounds.css");
 @import url("css/dark/gtk-widgets-borders.css");
 @import url("css/dark/gtk-widgets-assets.css");
-@import url("css/gtk-widgets.css");
 @import url("css/dark/gtk-widgets-overrides.css");
 @import url("css/gnome-applications.css");
 @import url("css/granite-widgets.css");
