@@ -4,9 +4,12 @@ If you find a bug or want an improvement in any way, simply raise an issue and w
 
 # Installation
 
-If you want to get the latest version easily with Git just follow this instruction:
+There are two ways of installing the theme.
 
-### Installing
+* Stable way: download the latest release and extract `Xenite` folder to `/usr/share/themes`
+
+* "Git" way, the latest version of the source:
+
 
 1. Navigate to `/usr/share/themes` (`cd /usr/share/themes`)
 
@@ -16,9 +19,13 @@ If you want to get the latest version easily with Git just follow this instructi
 
 ### Updating
 
+If you installed the theme with the second way you can update the theme to the latest version:
+
 1. Navigate to `/usr/share/themes/Xenite/`
 
 2. Run `git pull origin master`
 
 3. Done
+
+Otherwise you have to download the latest release and extract `Xenite` folder to `/usr/share/themes/` (override files enabled)
 
