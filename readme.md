@@ -1,33 +1,33 @@
 # Xenite
-Xenite is a GTK theme created for eOS Freya. Thanks to XGTK theme as the base of the theme.
+Xenite is a GTK theme created for [elementary OS Freya](http://elementary.io). Thanks to original [XGTK theme](http://kxmylo.deviantart.com/art/Xgtk-theme-gtk-3-14-3-12-465195148) as the base for this theme.
 If you find a bug or want an improvement in any way, simply raise an issue and we'll be there.
 
-**You must have `gtk2-engines-pixbuf` installed in your system!!!**
-
 # Installation
+### Dependencies
+* `gtk2-engines-pixbuf` (`sudo apt-get install gtk2-engines-pixbuf`)
 
-There are two ways of installing the theme.
+## Getting the source
+#### Stable
+This way lead to a stable theme version.
+  1. Download the [latest release](https://github.com/eOS-themes/Xenite/releases).
+  2. Extract `Xenite` folder to `/usr/share/themes`.
+  3. Done! The source will be in `/usr/share/themes/Xenite/`
 
-* Stable way: download the latest release and extract `Xenite` folder to `/usr/share/themes`
+#### Night build 
+This way lead to the latest version from the source.
+  1. Navigate to `/usr/share/themes` (`cd /usr/share/themes`).
+  2. Run this command: `git clone https://github.com/eOS-themes/Xenite.git`.
+  3. Done! The source will be in `/usr/share/themes/Xenite/`.
 
-* "Git" way, the latest version of the source:
+## Updating
+#### Stable
+  1. Download the [latest release](https://github.com/eOS-themes/Xenite/releases).
+  2. Delete old folder `/usr/share/themes/Xenite/`
+  2. Extract `Xenite` folder to `/usr/share/themes`.
+  3. Done! The updated source will be in `/usr/share/themes/Xenite/`
 
-
-1. Navigate to `/usr/share/themes` (`cd /usr/share/themes`)
-
-2. Run this command: `git clone https://github.com/eOS-themes/Xenite.git`
-
-3. Well done! The source will be in `/usr/share/themes/Xenite/`
-
-### Updating
-
+### Night build
 If you installed the theme with the second way you can update the theme to the latest version:
-
-1. Navigate to `/usr/share/themes/Xenite/`
-
-2. Run `git pull origin master`
-
-3. Done
-
-Otherwise you have to download the latest release and extract `Xenite` folder to `/usr/share/themes/` (override files enabled)
-
+  1. Navigate to `/usr/share/themes/Xenite/`.
+  2. Run `git pull origin master`.
+  3. Done!
