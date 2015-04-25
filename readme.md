@@ -2,6 +2,8 @@
 Xenite is a GTK theme created for eOS Freya. Thanks to XGTK theme as the base of the theme.
 If you find a bug or want an improvement in any way, simply raise an issue and we'll be there.
 
+**You must have `gtk2-engines-pixbuf` installed in your system!!!**
+
 # Installation
 
 There are two ways of installing the theme.
