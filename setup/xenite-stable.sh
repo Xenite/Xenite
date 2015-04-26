@@ -6,12 +6,13 @@
 hash gtk2-engines-pixbuf 2>/dev/null || { sudo apt-get install gtk2-engines-pixbuf; }
  
 # Download latest stable release from github.com
-curl -s -L https://github.com/eOS-themes/Xenite/releases/latest | egrep -o '/eOS-themes/Xenite/releases/download/[0-9]*/Xenite.tar' | wget --base=http://github.com/ -i - -O scollector
+wget https://github.com/eOS-themes/Xenite/releases/download/0.1/Xenite.tar
  
 # Extract to /usr/share/themes
-cd /usr/share/themes
-sudo tar xzfU --overwrite --overwrite-dir ~/Xenite.tar
+tar -xvf Xenite.tar
+sudo cp -fr ~/Xenite /usr/share/themes/Xenite
  
 # Remove temporary release download
-cd ~
 rm Xenite.tar
+
+echo "Done!"
