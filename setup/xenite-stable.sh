@@ -2,7 +2,7 @@
 # Automated Install Script for Xenite theme - stable
 # Copyright (C) vinctux (Jaka Smrekar), 2015
 
-RELEASE = 0.1
+RELEASE="0.1"
 
 # Install Xenite's dependecies
 hash gtk2-engines-pixbuf 2>/dev/null || { sudo apt-get install gtk2-engines-pixbuf; }
