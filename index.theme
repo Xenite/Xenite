@@ -4,7 +4,7 @@ Name=Xenite
 Comment=Xenite GTK theme for eOS Freya
 Encoding=UTF-8
 
-Name[en_US]=eXGTK
+Name[en_US]=Xenite
 
 [X-GNOME-Metatheme]
 GtkTheme=Xenite
