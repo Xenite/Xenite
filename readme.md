@@ -1,33 +1,11 @@
 # Xenite
+
+[![Download the Xenite theme now!](https://img.shields.io/github/downloads/eOS-themes/Xenite/latest/total.svg)](https://github.com/eOS-themes/Xenite/release/latest)
+[![Current version](https://img.shields.io/github/release/eOS-themes/Xenite.svg)](https://github.com/eOS-themes/Xenite/milestones)
+
 Xenite is a GTK theme created for [elementary OS Freya](http://elementary.io). Thanks to original [XGTK theme](http://kxmylo.deviantart.com/art/Xgtk-theme-gtk-3-14-3-12-465195148) as the base for this theme.
 If you find a bug or want an improvement in any way, simply raise an issue and we'll be there.
 
 # Installation
-### Dependencies
-* `gtk2-engines-pixbuf` (`sudo apt-get install gtk2-engines-pixbuf`)
-
-## Getting the source
-#### Stable
-This way lead to a stable theme version.
-  1. Download the [latest release](https://github.com/eOS-themes/Xenite/releases).
-  2. Extract `Xenite` folder to `/usr/share/themes`.
-  3. Done! The source will be in `/usr/share/themes/Xenite/`
-
-#### Night build 
-This way lead to the latest version from the source.
-  1. Navigate to `/usr/share/themes` (`cd /usr/share/themes`).
-  2. Run this command: `git clone https://github.com/eOS-themes/Xenite.git`.
-  3. Done! The source will be in `/usr/share/themes/Xenite/`.
-
-## Updating
-#### Stable
-  1. Download the [latest release](https://github.com/eOS-themes/Xenite/releases).
-  2. Delete old folder `/usr/share/themes/Xenite/`
-  2. Extract `Xenite` folder to `/usr/share/themes`.
-  3. Done! The updated source will be in `/usr/share/themes/Xenite/`
-
-### Night build
-If you installed the theme with the second way you can update the theme to the latest version:
-  1. Navigate to `/usr/share/themes/Xenite/`.
-  2. Run `git pull origin master`.
-  3. Done!
+#### [Automated install](https://gist.github.com/vinctux/9f21ccf2e1e6bbacc106)
+#### [Manual install](https://github.com/eOS-themes/Xenite/wiki/Installation)
