@@ -1,5 +1,5 @@
 #! /bin/bash
-# Automated Install Script for Xenite theme - night
+# Automated Install Script for Xenite theme
 # Copyright (C) vinctux (Jaka Smrekar), 2015
 
 # Install Xenite's dependencies
