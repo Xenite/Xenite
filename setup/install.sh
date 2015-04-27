@@ -9,19 +9,15 @@ hash git 2>/dev/null || { sudo apt-get install git; }
  
 # Pull night source code to /usr/share/themes
 echo "Cloning from source . . ."
-cd /usr/share/themes/
-[ -d "/usr/share/themes/Xenite" ] && { cd ./Xenite; sudo git pull origin master; } || { sudo git clone https://github.com/eOS-themes/Xenite.git; }
+[ -d "/usr/share/themes/Xenite" ] && { cd /usr/share/themes/Xenite; sudo git pull origin master; } || { cd /usr/share/themes; sudo git clone https://github.com/eOS-themes/Xenite.git; }
 
-# Fix plank
-cd /usr/share/themes/Xenite
-mkdir /usr/share/plank/themes/Xenite
-sudo cp -rf ./plank/* /usr/share/plank/themes/Xenite/
+# Fix plank issue
+sudo rm -rf /usr/share/plank/themes/Xenite/
+sudo mkdir /usr/share/plank/themes/Xenite/
+sudo cp -rf /usr/share/themes/Xenite/plank/* /usr/share/plank/themes/Xenite/
 
-# Clean up
-echo "Cleaning up . . ."
-cd /usr/share/themes/Xenite
-sudo rm -rf ./plank
-sudo rm -rf ./setup
-sudo rm -f readme.md
+# Create CRON job
+echo "Creating CRON job . . ."
+sudo cp -f /usr/share/themes/Xenite/setup/xenite.sh /etc/cron.daily/
 
-echo "Done!"
+echo "DONE WITH INSTALLING!"
