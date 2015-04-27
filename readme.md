@@ -9,8 +9,8 @@ To install Xenite, simply run the following command:
 sudo sh -c "curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/install.sh | bash"
 ```
 
-# Post-Install
-We recommend to use [GnomeYosemiteIcons](https://github.com/zacpier/GnomeYosemiteIcons) with installed [Numix Circle Icon Theme](https://github.com/numixproject/numix-icon-theme-circle).
+# [Post-Install](https://github.com/eOS-themes/Xenite/wiki/Installation#post-install)
+[We](https://github.com/eOS-themes/Xenite/graphs/contributors) recommend to use [GnomeYosemiteIcons](https://github.com/zacpier/GnomeYosemiteIcons) with installed [Numix Circle Icon Theme](https://github.com/numixproject/numix-icon-theme-circle).
 You can simply install them using this command:
 ```shell
 sudo sh -c "curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/post-install.sh | bash"
