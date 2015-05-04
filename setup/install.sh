@@ -17,7 +17,10 @@ sudo mkdir /usr/share/plank/themes/Xenite/
 sudo cp -rf /usr/share/themes/Xenite/plank/* /usr/share/plank/themes/Xenite/
 
 # Create CRON job
-echo "Creating CRON job . . ."
-sudo cp -f /usr/share/themes/Xenite/setup/xenite.sh /etc/cron.daily/
-
-echo "DONE WITH INSTALLING!"
+echo "Schedule a cronjob at every startup?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) echo "Creating CRON job . . ."; sudo /etc/crontab >> "@reboot root /usr/share/themes/Xenite/setup/update.sh"; echo "DONE WITH INSTALLING!"; break;;
+        No ) echo "DONE WITH INSTALLING!"; exit;;
+    esac
+done
