@@ -15,3 +15,10 @@ You can simply install them using this command:
 ```shell
 sudo sh -c "curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/post-install.sh | bash"
 ```
+
+# [Uninstall](https://github.com/eOS-themes/Xenite/wiki/Installation#uninstall)
+To remove Xenite completely from your computer, simply run the following command:
+```shell
+sudo sh -c "curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/uninstall.sh | bash"
+```
+The only thing, which currently isn't automated by the remove script, is the deletion of crontab entry. To solve this issue, the command/script will power up the crontab editor (`crontab -e`). Search for `@reboot /usr/share/themes/Xenite/setup/update.sh` and delete it.
