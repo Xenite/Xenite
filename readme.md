@@ -1,5 +1,7 @@
 # Xenite
 
+## Note: this theme is no longer under development. Hopefully we (developers & contributors) will back on this theme soon, but not before the date of Elementary OS 0.4 release.
+
 Xenite is a GTK theme created for [elementary OS Freya](http://elementary.io). Thanks to original [XGTK theme](http://kxmylo.deviantart.com/art/Xgtk-theme-gtk-3-14-3-12-465195148) as the base for this theme.
 If you find a bug or want an improvement in any way, simply raise an issue and we'll be there. Xenite is licensed under MIT license.
 
