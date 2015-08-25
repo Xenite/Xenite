@@ -18,7 +18,7 @@ bash: line 38: syntax error near unexpected token )' bash: line 38: [Ss]* )'
 Then download the script and then run it in this way:-
 ```shell
 $ bash
-$ cd Downloads && curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/install.sh -O
+$ cd Downloads && curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/install.sh > install.sh
 $ chmod +x install.sh
 $ sudo install.sh
 ```
