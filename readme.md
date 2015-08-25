@@ -10,6 +10,19 @@ To install Xenite, simply run the following command:
 ```shell
 sudo sh -c "curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/install.sh | bash"
 ```
+If error similar to the following:-
+```shell
+bash: line 37: canal: readonly variable
+bash: line 38: syntax error near unexpected token )' bash: line 38: [Ss]* )'
+```
+Then download the script and then run it in this way:-
+```shell
+$ bash
+$ cd Downloads && curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/install.sh > install.sh
+$ chmod +x install.sh
+$ sudo install.sh
+```
+
 
 # [Post-Install](https://github.com/eOS-themes/Xenite/wiki/Installation#post-install)
 [We](https://github.com/eOS-themes/Xenite/graphs/contributors) recommend to use [GnomeYosemiteIcons](https://github.com/zacpier/GnomeYosemiteIcons) with installed [Numix Circle Icon Theme](https://github.com/numixproject/numix-icon-theme-circle).
