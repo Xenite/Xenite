@@ -8,7 +8,7 @@ If you find a bug or want an improvement in any way, simply raise an issue and w
 # [Installation](https://github.com/eOS-themes/Xenite/wiki/Installation)
 To install Xenite, simply run the following command:
 ```shell
-sudo sh -c "curl https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/install.sh | bash"
+sudo sh -c "$(curl -sL https://raw.githubusercontent.com/eOS-themes/Xenite/master/setup/install.sh)"
 ```
 If error similar to the following:-
 ```shell
