@@ -53,7 +53,6 @@ case $canal in
         echo "Cloning from git source . . ."
         [ -d "/usr/share/themes/$GTKTheme" ] && { cd /usr/share/themes/$GTKTheme; sudo git pull origin master; } || { cd /usr/share/themes; sudo git clone $GitURL; }
         echo "DONE WITH NIGHT INSTALL!"
-        break;;
 esac
 
 # Fix plank issue (if existent)
