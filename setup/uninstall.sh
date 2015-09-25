@@ -20,6 +20,7 @@ while true; do
         [Nn]* ) echo "DONE WITH UNINSTALLING!"; break;;
         * ) break;;
     esac
+done
 
 # Remove source
 sudo rm -rf /usr/share/themes/$GTKTheme
