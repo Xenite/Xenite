@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Xenite
+Comment=Xenite theme
+Encoding=UTF-8
+
+Name[en_US]=xenite
+
+[X-GNOME-Metatheme]
+GtkTheme=elementary
+IconTheme=elementary
+CursorTheme=DMZ-Black
+ButtonLayout=close:maximize
