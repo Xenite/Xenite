@@ -129,6 +129,7 @@ if [[ $1 == "--sys" || $1 == "" ]]; then
 elif [[ $1 == "--user" ]]; then
     # Pull stable or night build and put it into user-wide theme folder
     echo "Beginning with user-wide theme install . . ."
+    [[ -d "~/.themes/" ]] || { mkdir ~/.themes/; }
     read -p "Stable [S/s] release or night [N/n] (maybe unstable) build? " CANAL
     case $CANAL in
         [Ss]* )
