@@ -47,13 +47,13 @@
 }
 
 *:selected {
-    background-color: shade (@base_color, 0.80);
+    background-color: @hoverColor;
     color: @text_color;
 }
 
 *:selected:focus {
-    background-color: alpha (@colorAccent, 0.9);
-    color: @selected_fg_color;
+    background-color: @hoverColor;
+    color: #333;
     text-shadow: none;
 }
 
@@ -917,23 +917,10 @@ actionbar button.text-button,
 .action-bar .button.text-button {
     text-shadow: 0 1px @text_shadow_color;
     icon-shadow: 0 1px @text_shadow_color;
-
-    background-image: linear-gradient(to bottom,
-                                  transparent,
-                                  transparent 50%,
-                                  alpha (#000, 0.04)
-                                  );
-
+    background: none;
     border: 1px solid @border_color;
-    border-radius: 2.5px;
-
-    box-shadow: inset 0 0 0 1px alpha (@bg_highlight_color, 0.05),
-                inset 0 1px 0 0 alpha (@bg_highlight_color, 0.45),
-                inset 0 -1px 0 0 alpha (@bg_highlight_color, 0.15),
-                0 1px 0 0 alpha (@bg_highlight_color, 0.15);
-
+    border-radius: 1px;
     color: @text_color;
-
     transition: all 100ms ease-in;
 }
 
@@ -1068,12 +1055,9 @@ button:focus:checked,
 .button:hover:checked,
 .button:focus:checked,
 .action-bar .button.suggested-action.text-button:active {
-    background-color: alpha (#000, 0.05);
-    background-image: none;
-    border-color: alpha (#000, 0.27);
-
-    box-shadow: inset 0 0 0 1px alpha (#000, 0.05),
-                0 1px 0 0 alpha (@bg_highlight_color, 0.30);
+    background: none;
+    border-color: alpha (@colorActive, 0.27);
+    color: @colorActive;
 }
 
 button.flat:active,
@@ -1599,7 +1583,7 @@ GtkComboBox.combobox-entry .button:last-child {
 notebook,
 .notebook {
     background-clip: border-box;
-    background-color: shade (@titlebar_color, 1.06);
+    background: #fff;
 
     border: none;
     border-radius: 0 0 2.5px 2.5px;
@@ -1617,30 +1601,17 @@ notebook.frame,
 
 notebook header,
 .notebook.header {
-    background-color: @bg_color;
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.10),
-                                  alpha (#000, 0.00) 3px
-                                  ),
-                      linear-gradient(to bottom,
-                                  shade (@titlebar_color, 0.85),
-                                  shade (@titlebar_color, 0.90)
-                                  );
+    background-color: #fff;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: shade (@titlebar_color, 0.56);
+    border-color: @colorBorder;
     border-radius: 0;
 }
 
 notebook header:backdrop,
 .notebook.header:backdrop {
-    background-color: shade (@titlebar_color, 0.96);
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.08),
-                                  alpha (#000, 0.00) 3px
-                                  );
-
-    border-color: shade (@titlebar_color, 0.70);
+    background-color: #f5f5f5;
+    border-color: @colorBorder;
 }
 
 .header separator.vertical {
@@ -1661,11 +1632,6 @@ notebook tab,
 .notebook tab {
     background-image: none;
     background-color: transparent;
-
-    border-image: linear-gradient(to bottom,
-                                  transparent,
-                                  alpha (#000, 0.20)
-                                  ) 0 1 0 0;
     border-radius: 0;
     border-width: 0 1px 0 0;
 
@@ -1677,43 +1643,26 @@ notebook tab,
 notebook tab:first-child,
 .notebook tab:first-child {
     border-width: 0 1px 0 1px;
-    border-image: linear-gradient(to bottom,
-                                  transparent,
-                                  alpha (#000, 0.20)
-                                  ) 0 1 0 1;
 }
 
 notebook tab:active,
 .notebook tab:active {
-    background-image: linear-gradient(to bottom,
-                                  shade (@titlebar_color, 0.88),
-                                  shade (@titlebar_color, 0.84)
-                                  );
-
-    border-color: shade (@titlebar_color, 0.56);
+    border-color: @colorBorder;
     border-image: none;
     border-radius: 4px;
     border-style: solid;
     border-width: 0 1px 1px;
 
-    box-shadow: inset 0 0 0 1px alpha (@bg_highlight_color, 0.20),
-                0 0 1px 1px alpha (#000, 0.10);
-
     icon-shadow: 0 1px @text_shadow_color;
     text-shadow: 0 1px @text_shadow_color;
 
-    color: @text_color;
+    color: @colorActive;
 }
 
 notebook tab:active:backdrop,
 .notebook tab:active:backdrop {
-    background-image: linear-gradient(to bottom,
-                                  shade (@titlebar_color, 0.98),
-                                  shade (@titlebar_color, 0.96)
-                                  );
-    border-color: shade (@titlebar_color, 0.70);
-    box-shadow: inset 0 0 0 1px alpha (@bg_highlight_color, 0.20),
-                0 0 0 1px alpha (#000, 0.10);
+    background-image: none;
+    border-color: #f5f5f5;
 }
 
 notebook tab > image,
@@ -1758,7 +1707,7 @@ notebook tab .active-page label,
 .notebook tab:active GtkLabel,
 .notebook .active-page,
 .notebook tab .active-page GtkLabel {
-    color: @text_color;
+    color: @colorActive;
 }
 
 notebook tab:backdrop label,
@@ -2803,13 +2752,13 @@ popover treeview.view row:selected,
 .view:selected,
 GtkTreeView row:focus,
 .popover GtkTreeView.view row:selected {
-    background-color: shade (@base_color, 0.80);
+    background-color: @hoverColor;
     color: @text_color;
 }
 
 .cell:selected:focus,
 .view:selected:focus {
-    background-color: @colorAccent;
+    background-color: @hoverColor;
     color: @selected_fg_color;
 }
 
@@ -3070,7 +3019,7 @@ list row:selected:focus image,
 .sidebar GtkList,
 .source-list,
 .source-list.view {
-    background-color: shade (@bg_color, 0.92);
+    background-color: #fff;
     color: mix (@titlebar_color, @text_color, 0.60);
     -gtk-icon-style: regular;
     -GtkTreeView-horizontal-separator: 1px;
@@ -3083,7 +3032,7 @@ dialog .source-list,
 GtkDialog .sidebar,
 GtkDialog .sidebar GtkList,
 GtkDialog .source-list {
-    background-color: shade (@titlebar_color, 1.07);
+    background-color: #fff;
 }
 
 .sidebar .list-row,
@@ -3124,7 +3073,7 @@ GtkDialog .source-list {
 .sidebar-item:hover,
 .sidebar-row:hover,
 .source-list .view:hover {
-    background-color: shade (@titlebar_color, 1.10);
+    background-color: @hoverColor;
 }
 
 .popover .sidebar.view:selected,
@@ -3134,21 +3083,8 @@ GtkDialog .source-list {
 .sidebar-row:selected,
 .source-list .view:selected,
 .source-list.category-expander:hover {
-    color: mix (@titlebar_color, @text_color, 0.60);
-
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.11),
-                                  alpha (#000, 0.07)
-                                  );
-
-    border-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.25),
-                                  alpha (@bg_highlight_color, 0.30)
-                                  ) 1 1 1 1;
-
-    box-shadow: inset 0 1px 0 0 alpha (#000, 0.03),
-                inset 0 -1px 0 0 alpha (#000, 0.10);
+    color: @colorActive;
+    background: none;
 }
 
 dialog .sidebar .view:selected,
@@ -3159,17 +3095,8 @@ GtkDialog .sidebar .view:selected,
 GtkDialog .sidebar-row:selected,
 GtkDialog .sidebar-row:selected:focus,
 GtkDialog .source-list .view:selected {
-    color: mix (@titlebar_color, @text_color, 0.60);
-    background-image: none;
-    background-color: alpha (#000, 0.05);
-
-    border-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.15),
-                                  alpha (@bg_highlight_color, 0.30)
-                                  ) 1 1 1 1;
-
-    box-shadow: inset 0 1px 0 0 alpha (#000, 0.02),
-                inset 0 -1px 0 0 alpha (#000, 0.10);
+    color: @colorActive;
+    background: none;
 }
 
 dialog .sidebar-row:selected:focus image,
@@ -3567,11 +3494,8 @@ GcrCertificateWidget .frame {
  ******/
 
 .titlebar {
-    background-image: linear-gradient(to bottom,
-                                  shade (@colorPrimary, 1.04),
-                                  shade (@colorPrimary, 0.88)
-                                  );
-    border-color: shade (@colorPrimary, 0.60);
+    background: #fff;
+    border-color: @colorBorder;
     border-radius: 4px 4px 0 0;
     border-style: solid;
     border-width: 0 0 1px;
@@ -3586,15 +3510,9 @@ GcrCertificateWidget .frame {
 }
 
 .titlebar:backdrop {
-    background-image: linear-gradient(to bottom,
-                              shade (@colorPrimary, 1.08),
-                              shade (@colorPrimary, 0.98)
-                              );
-    background-color: shade (@colorPrimary, 1.10);
-    border-color: shade (@colorPrimary, 0.64);
-
+    background: #f5f5f5;
+    border-color: @colorBorder;
     box-shadow: inset 0 0 0 1px alpha (shade (@colorPrimary, 1.4), 0.40);
-
     -gtk-image-effect: dim;
 }
 
@@ -3693,8 +3611,11 @@ GtkMessageDialog .titlebar.default-decoration:backdrop {
 }
 
 .titlebar .titlebutton:active {
+    color: transparent;
     border-color: transparent;
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: none;
 }
 
@@ -3735,8 +3656,7 @@ GtkMessageDialog .titlebar.default-decoration:backdrop {
 decoration,
 .window-frame {
     border-radius: 4px 4px 0 0;
-    box-shadow: 0 0 0 1px alpha (#000, 0.3),
-                0 14px 28px rgba(0,0,0,0.35),
+    box-shadow: 0 14px 28px rgba(0,0,0,0.35),
                 0 10px 10px rgba(0,0,0,0.22);
     margin: 12px;
 }
@@ -3745,8 +3665,7 @@ decoration,
 .window-frame.menu.csd,
 .window-frame.popup.csd {
     border-radius: 3px;
-    box-shadow: 0 0 0 1px alpha (#000, 0.20),
-                0 3px 6px alpha (#000, 0.16),
+    box-shadow: 0 3px 6px alpha (#000, 0.16),
                 0 3px 6px alpha (#000, 0.23);
     margin: 0;
 }
@@ -3754,8 +3673,7 @@ decoration,
 menu .popup decoration,
 .menu .window-frame.menu.csd,
 .menu .window-frame.popup.csd {
-    box-shadow: 0 0 0 1px alpha (#000, 0.20),
-                0 10px 20px alpha (#000, 0.19),
+    box-shadow: 0 10px 20px alpha (#000, 0.19),
                 0 6px 6px alpha (#000, 0.23);
 }
 
@@ -3774,8 +3692,7 @@ tooltip decoration {
 
 decoration:backdrop,
 .window-frame:backdrop {
-    box-shadow: 0 0 0 1px alpha (#000, 0.20),
-                0 3px 6px alpha (#000, 0.16),
+    box-shadow: 0 3px 6px alpha (#000, 0.16),
                 0 3px 6px alpha (#000, 0.23),
                 0 14px 28px transparent;
 }
@@ -3783,8 +3700,7 @@ decoration:backdrop,
 .tiled decoration,
 .tiled .window-frame {
     border-radius: 0;
-    box-shadow: 0 0 0 1px alpha (#000, 0.20),
-                0 1px 3px alpha (#000, 0.12),
+    box-shadow: 0 1px 3px alpha (#000, 0.12),
                 0 1px 2px alpha (#000, 0.24);
 }
 
@@ -3796,8 +3712,7 @@ dialog decoration,
 messagedialog decoration,
 GtkDialog .window-frame {
     border-radius: 4px;
-    box-shadow: 0 0 0 1px alpha (#000, 0.20),
-                0 8px 10px 1px alpha (#000, 0.14),
+    box-shadow: 0 8px 10px 1px alpha (#000, 0.14),
                 0 3px 14px 2px alpha (#000, 0.12),
                 0 5px 5px -3px alpha (#000, 0.4),
                 0 14px 28px transparent;

@@ -21,17 +21,19 @@
 @define-color colorAccent @selected_bg_color;
 @define-color textColorPrimary shade (@colorPrimary, 0.50);
 @define-color textColorPrimaryShadow alpha (shade (@colorPrimary, 1.4), 0.6);
-
+@define-color colorActive #ed6a43;
+@define-color colorBorder #dddddd;
+@define-color hoverColor #f5f5f5;
 /* Default color scheme */
 @define-color base_color #FFF;
 @define-color bg_color shade (@base_color, 0.96);
 @define-color bg_highlight_color #fff;
-@define-color border_color alpha (#000, 0.25);
+@define-color border_color @hoverColor;
 @define-color fg_color #333;
 @define-color insensitive_color mix(@text_color, @bg_color, 0.6);
 @define-color inset_dark_color alpha (#000, 0.06);
 @define-color inset_dark_color_backdrop alpha (#000, 0.03);
-@define-color menu_separator alpha (#000, 0.15);
+@define-color menu_separator #f5f5f5;
 @define-color menu_separator_shadow alpha (#fff, 0.8);
 @define-color placeholder_text_color shade(@text_color, 2.5);
 @define-color progress_row_trough_color #DEDEDE;
