@@ -2729,13 +2729,13 @@ popover treeview.view row:selected,
 GtkTreeView row:focus,
 .popover GtkTreeView.view row:selected {
     background-color: @hoverColor;
-    color: @text_color;
+    color: #333;
 }
 
 .cell:selected:focus,
 .view:selected:focus {
     background-color: @hoverColor;
-    color: @selected_fg_color;
+    color: #333;
 }
 
 /* FIXME: This doesn't work with only-child
