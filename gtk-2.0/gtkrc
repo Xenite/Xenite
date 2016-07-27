@@ -7,12 +7,12 @@
 #
 # See the file COPYING for the full license text.
 
-gtk_color_scheme	= "bg_color:#DEDEDE\nselected_bg_color:#4a90d9\nbase_color:#FFF"	# Background, base
-gtk_color_scheme	= "fg_color:#4D4D4D\nselected_fg_color:#FFF\ntext_color:#4D4D4D"	# Foreground, text
+gtk_color_scheme	= "bg_color:#fff\nselected_bg_color:#4a90d9\nbase_color:#FFF"	# Background, base
+gtk_color_scheme	= "fg_color:#333\nselected_fg_color:#FFF\ntext_color:#333"	# Foreground, text
 gtk_color_scheme 	= "sidebar_color:#DEDEDE"                                           # Custom colors
-gtk_color_scheme	= "tooltip_bg_color:#000\ntooltip_fg_color:#FFF"                    # Tooltips
+gtk_color_scheme	= "tooltip_bg_color:#f5f5f5\ntooltip_fg_color:#333"                    # Tooltips
 gtk_color_scheme	= "link_color:#08C"                                                 # Hyperlinks
-gtk_color_scheme	= "frame_color:#D1D1D1\ninactive_frame_color:#D1D1D1"               # Fix for Chrome
+gtk_color_scheme	= "frame_color:#fff\ninactive_frame_color:#fff"               # Fix for Chrome
 gtk_color_scheme	= "bg_color_dark:#F0F0F0\ntext_color_dark:#4d4d4d\ntext_color_dark_selected:#FFF"                     # Dark colors - NO MORE DARKS
 gtk_color_scheme	= "widget_color:#EAEAEA"
 
@@ -126,8 +126,8 @@ style "murrine-default"
 		lightborderstyle        = 0		# 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewstyle           = 2		# 0 = nothing, 1 = dotted, 2 = line
 		menubaritemstyle        = 0		# 0 = menuitem look, 1 = button look
-		menubarstyle            = 2		# 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
-		menuitemstyle           = 1		# 0 = flat, 1 = glassy, 2 = striped
+		menubarstyle            = 0		# 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+		menuitemstyle           = 0		# 0 = flat, 1 = glassy, 2 = striped
 		menustyle               = 0		# 0 = no vertical menu stripe, 1 = display vertical menu stripe
 		progressbarstyle        = 1
 		reliefstyle             = 3		# 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
@@ -138,7 +138,7 @@ style "murrine-default"
 		shadow_shades           = { 2.0, 1.0 }
 		sliderstyle             = 0     	# 0 = nothing added
 		stepperstyle            = 1		# 0 = standard, 1 = integrated stepper handles, 2 = unknown
-		toolbarstyle            = 1		# 0 = flat, 1 = glassy, 2 = gradient
+		toolbarstyle            = 0		# 0 = flat, 1 = glassy, 2 = gradient
 		trough_shades           = { 0.85, 1.0 }
 	}
 }
