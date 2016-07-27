@@ -215,11 +215,7 @@ GtkPaned.vertical {
 
 paned separator,
 .pane-separator {
-    background-color: shade (@base_color, 0.65);
-    background-image: linear-gradient(to right,
-                                  shade (@base_color, 0.65),
-                                  shade (@base_color, 0.65)
-                                  );
+    background-color: @colorBorder;
     -gtk-icon-source: none;
 }
 
@@ -435,12 +431,8 @@ treeview .progressbar,
 .progressbar,
 .progressbar row,
 .progressbar row:hover {
-    background-image: linear-gradient(to bottom,
-                                  shade (@colorAccent, 1.30),
-                                  shade (@colorAccent, 1.08)
-                                  );
-
-    border: 1px solid shade (@colorAccent, 0.90);
+    background: @colorActive;
+    border: 1px solid shade (@colorActive, 0.90);
 
     box-shadow: inset 0 0 0 1px alpha (#fff, 0.05),
                 inset 0 1px 0 0 alpha (#fff, 0.35),
@@ -452,10 +444,7 @@ treeview .progressbar,
 
 progressbar.vertical progress,
 .progressbar.vertical {
-    background-image: linear-gradient(to right,
-                                  shade (@colorAccent, 1.25),
-                                  shade (@colorAccent, 1.18)
-                                  );
+    background: @colorActive;
     margin: -1px 0 -1px 0;
 }
 
@@ -577,13 +566,9 @@ levelbar trough,
 
 levelbar block,
 .level-bar.fill-block {
-    background-color: @selected_bg_color;
-    background-image: linear-gradient(to bottom,
-                                  shade (@selected_bg_color, 1.30),
-                                  @selected_bg_color
-                                  );
+    background: @colorActive;
 
-    border: 1px solid shade (@selected_bg_color, 0.90);
+    border: 1px solid shade (@colorActive, 0.90);
     border-radius: 2.5px;
 
     box-shadow: inset 0 0 0 1px alpha (#fff, 0.05),
@@ -596,17 +581,14 @@ levelbar block,
 
 levelbar block.filled.low,
 .level-bar.fill-block.level-low {
-    background-image: linear-gradient(to bottom,
-                                  shade (@error_color, 1.30),
-                                  @error_color
-                                  );
+    background: @colorActive;
 
     box-shadow: inset 0 0 0 1px alpha (#fff, 0.05),
                 inset 0 1px 0 0 alpha (#fff, 0.25),
                 inset 0 -1px 0 0 alpha (#fff, 0.10),
                 0 1px 0 0 alpha (@bg_highlight_color, 0.15);
 
-    border-color: shade (@error_color, 0.90);
+    border-color: shade (@colorActive, 0.90);
 }
 
 levelbar block.filled.middle,
@@ -801,13 +783,10 @@ scale mark,
 
 scale highlight,
 .scale.highlight.left {
-    border: 1px solid alpha (#000, 0.50);
+    border: 1px solid alpha (@colorActive, 0.50);
     border-radius: 12px 0 0 12px;
 
-    background-image: linear-gradient(to bottom,
-                                  alpha (#000, 0.40),
-                                  alpha (#000, 0.30)
-                                  );
+    background: @colorActive;
 
     box-shadow: inset 0 0 0 1px alpha (#000, 0.05),
                 0 1px 0 0 alpha (@bg_highlight_color, 0.30);
@@ -830,13 +809,10 @@ scale highlight:insensitive,
 
 scale.vertical highlight,
 .scale.highlight.bottom {
-    border-color: alpha (#000, 0.50);
+    border-color: alpha (@colorActive, 0.50);
     border-radius: 12px 12px 0 0;
 
-    background-image: linear-gradient(to right,
-                                  alpha (#000, 0.40),
-                                  alpha (#000, 0.30)
-                                  );
+    background: @colorActive;
 
     box-shadow: inset 0 0 0 1px alpha (#000, 0.05),
                 0 1px 0 0 alpha (@bg_highlight_color, 0.30);
@@ -1754,7 +1730,7 @@ scrollbar button,
 scrollbar.overlay-indicator slider,
 .slider {
     border: 1px solid alpha (@bg_highlight_color, 0.25);
-    background-color: alpha (@text_color, 0.6);
+    background-color: @colorBorder;
     border-radius: 10px;
 }
 
@@ -1775,7 +1751,7 @@ scrollbar.overlay-indicator trough,
 
 scrollbar:hover trough,
 .scrollbar:hover.trough {
-    background-color: alpha (#000, 0.10);
+    background-color: alpha(@colorBorder, 0.10);
     border-radius: 20px;
 }
 
