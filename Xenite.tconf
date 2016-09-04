@@ -1,0 +1,111 @@
+# themeon Configuration Script v1.0
+
+#==================== DO NOT REMOVE ANY VARIABLE ==================#
+#==================== ONLY FILL REQUIRED DATA IN ==================#
+
+#==================== [GENERAL] ====================#
+# Define your theme project name (THEME), its author (AUTHOR),
+# its git network address (GITURL) and the latest stable release (RELEASE)
+# [if without releases leave empty].
+# In case you're hosting on GitHub, change GITHUB variable to true, provide your
+# username on which the project is hosted (AUTHOR) and project theme name (THEME).
+THEME="Xenite"
+AUTHOR="Xenite"
+RELEASE="v1.0"
+GITURL="https://github.com/$AUTHOR/$THEME.git"
+RELEASEURL="https://github.com/$AUTHOR/$THEME/archive/$RELEASE/$THEME.tar"
+
+# Specify your theme's short and long description.
+DESC_SHORT=""
+DESC_LONG=""
+
+# Declare your dependencies in a bash array.
+# For example:   DEPS=(git gtk2-engines-pixbuf somemoresoftware)
+# If you got none deps, leave as it is.
+DEPS=(gtk2-engines-pixbuf)
+
+### DO NOT EDIT ###
+TEXECDIR="$HOME/.config/themeon/$THEME"
+mkdir -p $TEXECDIR
+### DO NOT EDIT ###
+
+
+#==================== [INSTALL] ====================#
+cat > $TEXECDIR/INSTALL_PREEXEC-$THEME.texe << EOL
+#============= themeon $THEME Pre-Install ===============#
+# Write your pre-install commands here.
+# Ensure that all commands are written
+# in a secure manner (no piping of random scripts
+# from the web) and use as little of sudo as possible.
+
+
+
+EOL
+cat > $TEXECDIR/INSTALL_POSTEXEC-$THEME.texe << EOL
+#============= themeon $THEME Post-Install ===============#
+# Write your post-install commands here.
+# Ensure that all commands are written
+# in a secure manner (no piping of random scripts
+# from the web) and use as little of sudo as possible.
+
+
+
+EOL
+
+
+#==================== [UPDATE] =====================#
+# It is NOT recommended to alter these values!
+# Proceed only when you know what you are doing
+# and want to change the script which will execute
+# with the same permissions as the originally run
+# `themeon-install'.
+UPDATE_EXECF="/usr/lib/themeon/themeon-install"
+
+cat > $TEXECDIR/UPDATE_PREEXEC-$THEME.texe << EOL
+#============= themeon $THEME Pre-Update ===============#
+# Write your pre-update commands here.
+# Ensure that all commands are written
+# in a secure manner (no piping of random scripts
+# from the web) and use as little of sudo as possible.
+
+
+
+EOL
+cat > $TEXECDIR/UPDATE_POSTEXEC-$THEME.texe << EOL
+#============= themeon $THEME Post-Update ===============#
+# Write your post-update commands here.
+# Ensure that all commands are written
+# in a secure manner (no piping of random scripts
+# from the web) and use as little of sudo as possible.
+
+
+
+EOL
+
+
+#==================== [UNINSTALL] ====================#
+# Declare if you want to purge all dependencies,
+# installed on behalf of the install procedure
+REMOVE_PURGE_DEPS=false
+
+
+cat > $TEXECDIR/REMOVE_PREEXEC-$THEME.texe << EOL
+#============= themeon $THEME Pre-Uninstall ===============#
+# Write your pre-uninstall commands here.
+# Ensure that all commands are written
+# in a secure manner (no piping of random scripts
+# from the web) and use as little of sudo as possible.
+
+
+
+EOL
+cat > $TEXECDIR/REMOVE_POSTEXEC-$THEME.texe << EOL
+#============= themeon $THEME Post-Uninstall ===============#
+# Write your post-uninstall commands here.
+# Ensure that all commands are written
+# in a secure manner (no piping of random scripts
+# from the web) and use as little of sudo as possible.
+
+
+
+EOL
