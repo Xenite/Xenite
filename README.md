@@ -1,17 +1,21 @@
 # Xenite
 
-# In development!
-As [elementary OS](https://elementary.io/) [0.4 Loki](https://launchpad.net/elementaryos/0.4-loki) [Beta 2](https://elementary.io/developer) [is out](http://blog.elementary.io/post/147507276666/loki-beta-2-is-here), the development of the Xenite theme has been picked up again, as promised.
+### Note
+
+This theme is not under development anymore. I don't want to develop themes, nor I want to change elementary OS style. I promised I'll back on it once Loki is out, but I decided to stop any work on it. Sorry. The `development` branch contains a theme that I wanted to create, the `master` branch contains an outdated default theme with OSX-like window controls. Feel free to fork it.
 
 # Install
 To install Xenite, install [`themeon`](https://github.com/vinctux/themeon) first.
+
 ```shell
 cd ~
 git clone https://github.com/vinctux/themeon.git
 cd themeon
 sudo make install
 ```
+
 After successfully installing `themeon`, run the following to install Xenite. If you wish to install Xenite system-wide, replace `--user` with `--sys`.
+
 ```shell
 themeon install --user https://raw.githubusercontent.com/Xenite/Xenite/master/Xenite.tconf a5961456887c159995e3e34e21848bb183a2360c66a9ce58a85730e43c897db7
 ```
@@ -19,6 +23,7 @@ In case of a hash mismatch error, report to [Xenite's Issues](https://github.com
 
 # Uninstall
 To remove Xenite from your computer, simply run:
+
 ```shell
 themeon remove Xenite
 ```
